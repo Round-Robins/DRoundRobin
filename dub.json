@@ -1,0 +1,6 @@
+{
+    "name": "DRoundRobin",
+    "targetName": "DRoundRobin",
+    "targetType": "staticLibrary",
+    "targetPath": "lib"
+}

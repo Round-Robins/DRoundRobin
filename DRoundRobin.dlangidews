@@ -1,0 +1,7 @@
+{
+    "name": "DRoundRobin",
+    "description": null,
+    "projects": {
+        "DRoundRobin": "dub.json"
+    }
+}
