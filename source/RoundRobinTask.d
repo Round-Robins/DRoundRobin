@@ -1,3 +1,7 @@
 module RoundRobinTask;
 
+class RoundRobinTask
+{
+
+}
 

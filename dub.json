@@ -1,5 +1,5 @@
 {
-    "name": "DRoundRobin",
+    "name": "round_robin",
     "targetName": "DRoundRobin",
     "targetType": "staticLibrary",
     "targetPath": "lib"
