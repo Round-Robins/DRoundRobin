@@ -1,33 +1,30 @@
 module RoundRobin;
 
 import RoundRobinTask;
+import std.container;
 
 interface IRoundRobin
 {
-
     void Run();
-    
-    bool AddTask();
 
-    bool DeleteTask();
+    bool AddTask(IRoundRobinTask task);
 }
 
 class RoundRobin : IRoundRobin
 {
-    IRoundRobinTask[] Tasks;
-    
+    auto Tasks = Array!IRoundRobinTask();
+
     void Run()
     {
-        
+        foreach(IRoundRobinTask task; Tasks)
+        {
+            task.Task();
+        }
     }
-    
-    bool AddTask()
+
+    bool AddTask(IRoundRobinTask task)
     {
-        return true;   
-    }
-    
-    bool DeleteTask()
-    {
+        Tasks.insert(task);
         return true;
     }
 }
